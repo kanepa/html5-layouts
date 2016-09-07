@@ -5,9 +5,42 @@
 	<title>Forms</title>
 </head>
 <body>
-<form action="#">
-	<input type="text" name="username">
-	<input type="date" date=>
+<form action="/login" method="post">
+	<input type="date" name="birthday">
+	<input type="time" name="game-time">
+	<input type="email" name="email-address">
+	<input type="url" name="website">
+	<input type="number" name"cost">
+	<input type="tel" name="phone-number">
+	<textarea name="comment">Add your comment</textarea>
+	<input type="radio" name="day" value="Friday"> Friday
+	<input type="radio" name="day" value="Saturday"> Saturday
+	<input type="radio" name="day" value="Sunday"> Sunday
+	<select name="day">
+		<option value="Friday" selected>Friday</option>
+		<option value="Saturday">Saturday</option>
+		<option value="Sunday">Sunday</option>
+	</select>
+	<select name"day" multiple>
+		<option value="Friday" selected>Friday</option>
+		<option value="Saturday"> Saturday</option>
+		<option value="Sunday">Sunday </option>
+		</select>
+	<input type="submit" name="submit" value="Send">
+	<button name="submit">
+	<strong>Send us</strong> a message
+		</button>
+	<input type="hidden" name="tracking-code" value"abc-123">
+	<label>
+		Email Address
+		<input type="email" name="email-address" placeholder="name@domain.com">
+	</label>
+	<label>
+		Email Address
+		<input type="email" name="email-address" required>
+	</label>
+
+
 </form>
 
 	
